@@ -20,6 +20,10 @@
     <string name="reminder_label">Reminder Text</string>
     <string name="reminder_text">Don\'t forget!</string>
 
+    <!-- Channels  -->
+    <string name="channel_name">アラームとタイマー</string>
+    <string name="channel_description">指定時間にアラームを起動する</string>
+
     <!--  Logging -->
 
     <string name="snoozing">Snoozing!</string>
