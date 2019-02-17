@@ -1,5 +1,6 @@
 package com.example.android.pingme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -19,10 +20,17 @@ public class ResultActvity extends AppCompatActivity {
     }
 
     public void onDismissClick(View view){
+        Intent intent = new Intent(getApplicationContext(),PingService.class);
+        intent.setAction(CommonConstants.ACTION_DISMISS);
+        startService(intent);
+        finish();
 
     }
 
     public void onSnoozeClick(View view){
-
+        Intent intent = new Intent(getApplicationContext(),PingService.class);
+        intent.setAction(CommonConstants.ACTION_SNOOZE);
+        startService(intent);
+        finish();
     }
 }
